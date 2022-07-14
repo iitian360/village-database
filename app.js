@@ -4,7 +4,6 @@ connect_DB from './db/connect_db.js'
 import web from './router/web.js'
 import home from './router/home.js';
 import { join } from 'path';
-
 const app= express();
 const port= process.env.PORT||3000;
 
