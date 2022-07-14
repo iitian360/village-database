@@ -12,19 +12,35 @@
                     <form method="post">
                         <div class="mb-3">
                             <label for="village" class="form-label">Book</label>
-                            <input type="text" class="form-control" id="village" name="village" />
+                            <input type="text" class="form-control" autocomplete="off" id="village" name="village" />
                         </div>
                         <div class="mb-3">
                             <label for="district" class="form-label">Author</label>
-                            <input type="text" class="form-control" id="district" name="district" />
+                            <input type="text" class="form-control" autocomplete="off" id="district" name="district" />
                         </div>
                         <div class="mb-3">
                             <label for="post" class="form-label">Categroy</label>
-                            <input type="text" class="form-control" id="post" name="post" />
+                            <select class="form-select" id="post" name="post" required>
+                                <option selected>Choose...</option>
+                                <option value="Science">Science</option>
+                                <option value="Novel">Novel</option>
+                                <option value="Romantic">Romantic</option>
+                                <option value="Blogs">blogs</option>
+                                <option value="Thriler">Thriler</option>
+                                <option value="Story">Story</option>
+                                <option value="Biogyrphy">Biogyrphy</option>
+                                <option value="History">History</option>
+                                <option value="Mathmatics">Mathmatics</option>
+                              </select>
                         </div>
                         <div class="mb-3">
                             <label for="code" class="form-label">Availability</label>
-                            <input type="text" class="form-control" min="111165" id="code" name="code" />
+                            <select class="form-select" id="code" name="code" required>
+                                <option selected>Choose...</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                                <option value="Comming soon">Comming soon</option>
+                              </select>
                         </div>
                         <button type="submit" class="btn btn-primary">Create</button>
                     </form>
