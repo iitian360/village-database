@@ -26,6 +26,8 @@ class villageController {
     static all_data = async (req, res) => {
         try {
             const result = await village_model.find();
+            // console.log(result);
+            
             res.render('vill_data', { 'title': 'library', data: result });
             // console.log(result);
 
