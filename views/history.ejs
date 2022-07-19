@@ -1,0 +1,50 @@
+<!-- including header -->
+<%- include ('./partials/header.ejs') %>
+  <!-- here we can put our other link element -->
+
+  <!-- including navbar -->
+  <%- include('./partials/navbar.ejs') %>
+
+  <div><% data.msj %></div>
+
+    <div class="container-md d-flex flex-wrap">
+
+      <% var i=1 %>
+        <% data.forEach((item)=> { %>
+          <div class="card m-2">
+            <div class="card-body">
+              
+              <span class="badge bg-success">
+                <%= i++ %>
+              </span>
+              <span>Added on <%=(item.join).toDateString()%></span>
+              <h5 class="card-title">
+                <%= item.village %>
+              </h5>
+              <p class="card-text">
+                <%= item.district %>
+              </p>
+              <a href="#" class="btn btn-outline-success btn-sm">Preview</a>
+              <a href="#" class="btn btn-outline-primary btn-sm">Downlode</a>
+              
+
+            </div>
+          </div>
+          <% })%>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- here we can put script link -->
+
+
+    <!-- including footer -->
+    <%- include ('./partials/footer.ejs') %>

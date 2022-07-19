@@ -4,7 +4,8 @@ const village_schema = new mongoose.Schema({
     village: { type: String, require: true },
     district: { type: String, require: true },
     post: { type: String },
-    code: { type: String, require:true}
+    code: { type: String, require:true},
+    join:{type:Date, default:Date.now}
 
 })
 

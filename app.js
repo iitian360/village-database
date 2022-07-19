@@ -2,7 +2,6 @@ import express from 'express';
 import connect_DB from './db/connect_db.js'
 import web from './router/web.js'
 import home from './router/home.js';
-import book from './router/book.js';
 import { join } from 'path';
 const app= express();
 const port= process.env.PORT||3000;
@@ -28,7 +27,7 @@ connect_DB(data_url);
 // routes
 app.use('/village', web);
 app.use('/' , home);
-app.use('/romantic', book);
+
 
 
 app.listen(port,()=>{
