@@ -1,3 +1,6 @@
+import dotenv from 'dotenv';
+dotenv.config();
+
 import express from 'express';
 import connect_DB from './db/connect_db.js'
 import web from './router/web.js'
@@ -7,7 +10,7 @@ const app= express();
 const port= process.env.PORT||3000;
 
 // url string of mongodb
-const data_url=process.env.data_url||'mongodb://127.0.0.1:27017/Village';
+const data_url=process.env.Data_url;
 
 // middleware
 app.use('/',express.static(join(process.cwd(),"public")));
