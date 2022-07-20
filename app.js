@@ -10,7 +10,7 @@ const app= express();
 const port= process.env.PORT||3000;
 
 // url string of mongodb
-const data_url=process.env.Data_url;
+const data_url=process.env.data_url;
 
 // middleware
 app.use('/',express.static(join(process.cwd(),"public")));
