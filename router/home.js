@@ -1,9 +1,10 @@
 import express from 'express';
 import filter from '../controller/book_controller.js';
-import home_page from '../controller/home_controller.js';
+import home_action from '../controller/home_controller.js';
 const router=express.Router();
 
-router.get('/',home_page);
+router.get('/',home_action.home_page);
+router.get('/register',home_action.register_page);
 router.get('/history',filter.history_book);
 router.get('/romantic',filter.romantic_book);
 router.get('/story',filter.story_book);

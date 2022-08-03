@@ -161,7 +161,7 @@ class filter{
             const result= await village_model.find({"post":"Biography"});
             // console.log(result);
             if(result.length==0){
-                res.send('no books');
+                res.render('message',{'title':'Sorry! book are added soon'});
             }
             else
             res.render('history',{'title':'Collection of all biography books!', data:result});
@@ -179,7 +179,7 @@ class filter{
             const result= await village_model.find();
             // console.log(result);
             if(result.length==0){
-                res.send('no books');
+                res.render('message',{'title':'Sorry! book are added soon'});
             }
             else
             res.render('history',{'title':'Collection of all books!', data:result});

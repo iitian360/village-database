@@ -1,7 +1,13 @@
 </head>
 
 <body>
-
+<style>
+  body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+</style>
   <nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-sm-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">Collagelib</a>
@@ -23,20 +29,22 @@
               Books
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Science fiction</a></li>
+              <li><a class="dropdown-item" href="/science">Science fiction</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="/biography">Autobiography</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="/romantic">Romantic</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Historical</a></li>
+              <li><a class="dropdown-item" href="/history">Historical</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Novel</a></li>
+              <li><a class="dropdown-item" href="/novel">Novel</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">More..</a></li>
+              <li><a class="dropdown-item" href="/all_books">More..</a></li>
               
             </ul>
           </li>
+
+          <a class="nav-link active btn btn-success"  aria-current="page" href="/register">Login/register</a>
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
