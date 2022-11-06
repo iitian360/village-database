@@ -9,8 +9,11 @@ const village_schema = new mongoose.Schema({
 
 })
 
+
+
 //  here we creat a collection "vill_list" in the mentioned database which
 //follow the above schema
 const village_model = mongoose.model('vill_list', village_schema);
+// const student_modal=mongoose.model('client', student_schema);
 
 export default village_model;
